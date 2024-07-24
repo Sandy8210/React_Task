@@ -1,0 +1,47 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+nav ul li::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 3px;
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in;
+}
+
+.icon {
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: #fff;
+}
+
+.icon:hover {
+  background-color: var(--primary-color);
+}

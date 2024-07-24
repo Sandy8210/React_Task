@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  font-family: "Lora", serif;
+
+  --light-background-color: #f8f9fa;
+  --light-primary-color: #007bff;
+  --light-secondary-color: #6c757d;
+  --light-gold-color: #ef8b18;
+  --text-light-color: #000;
+
+  --dark-background-color: #303030;
+  --dark-primary-color: #ff5722;
+  --dark-secondary-color: #009688;
+  --dark-gold-color: #ff0019;
+  --text-dark-color: #fff;
+}
+
+[data-theme="light"] {
+  --background-color: var(--light-background-color);
+  --primary-color: var(--light-primary-color);
+  --secondary-color: var(--light-secondary-color);
+  --ascent-color: var(--light-gold-color);
+  --text-color: var(--text-light-color);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--dark-background-color);
+  --primary-color: var(--dark-primary-color);
+  --secondary-color: var(--dark-secondary-color);
+  --ascent-color: var(--dark-gold-color);
+  --text-color: var(--text-dark-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
